@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "724108020694",
+    "firebase_url": "https://getwheels-8e72f-default-rtdb.firebaseio.com",
+    "project_id": "getwheels-8e72f",
+    "storage_bucket": "getwheels-8e72f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724108020694:android:ab1542ba99baf19833b277",
+        "android_client_info": {
+          "package_name": "com.example.madproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724108020694-gihcklvndjujf1b6mhf784ko0v9i7nqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-dTCcrAEhoggbu3Z-FLjqT3g1pZBFwXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724108020694-gihcklvndjujf1b6mhf784ko0v9i7nqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

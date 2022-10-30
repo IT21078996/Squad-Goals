@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3FFCF"
+    tools:context=".LoginActivity">
+
+  <Button
+      android:id="@+id/btnBack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="34dp"
+      android:layout_marginEnd="28dp"
+      android:text="@string/back"
+      android:textColor="@color/black"
+      app:cornerRadius="10dp"
+      app:icon="@drawable/ic_baseline_chevron_left_24"
+      app:iconTint="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+  <TextView
+      android:id="@+id/heading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:text="@string/create_new_account"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.502"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+  <TextView
+      android:id="@+id/pageHeading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="37dp"
+      android:text="@string/sign_up"
+      android:textColor="@color/black"
+      android:textSize="24sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="0dp"
+      android:layout_height="100dp"
+      android:contentDescription="@string/todo"
+      android:scaleType="fitXY"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/bottom_round_rec"
+      tools:ignore="ImageContrastCheck" />
+
+  <TextView
+      android:id="@+id/logo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="40dp"
+      android:fontFamily="@font/inika"
+      android:text="@string/getwheels"
+      android:textColor="@color/black"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/welcome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="46dp"
+      android:layout_marginEnd="32dp"
+      android:text="@string/welcome_user"
+      android:textColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/bottomNavigationView"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:background="@color/purple_500"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ScrollView
+      android:id="@+id/scroll"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/heading"
+      app:layout_constraintVertical_bias="0.0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <EditText
+          android:id="@+id/eTPhone"
+          android:layout_width="275dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:autofillHints=""
+          android:background="@drawable/rounded_corner"
+          android:ems="10"
+          android:hint="@string/hintpn"
+          android:inputType="phone"
+          android:minHeight="48dp"
+          android:textColorHint="#757575"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/eTUsername"
+          tools:ignore="TextContrastCheck" />
+
+      <EditText
+          android:id="@+id/eTUsername"
+          android:layout_width="275dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="40dp"
+          android:autofillHints=""
+          android:background="@drawable/rounded_corner"
+          android:ems="10"
+          android:hint="@string/hintus"
+          android:inputType="textPersonName"
+          android:minHeight="48dp"
+          android:textColorHint="#757575"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:ignore="TextContrastCheck" />
+
+      <TextView
+          android:id="@+id/lblUsername"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/username"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toTopOf="@+id/eTUsername"
+          app:layout_constraintStart_toStartOf="@+id/eTUsername" />
+
+      <EditText
+          android:id="@+id/eTPassword"
+          android:layout_width="275dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:autofillHints=""
+          android:background="@drawable/rounded_corner"
+          android:ems="10"
+          android:hint="@string/hintps"
+          android:inputType="textPassword"
+          android:minHeight="48dp"
+          android:textColorHint="#757575"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editTextAddress"
+          tools:ignore="TextContrastCheck" />
+
+      <TextView
+          android:id="@+id/lblpNum"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/mobile"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toTopOf="@+id/eTPhone"
+          app:layout_constraintStart_toStartOf="@+id/eTPhone" />
+
+      <TextView
+          android:id="@+id/lblPassword"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/password"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toTopOf="@+id/eTPassword"
+          app:layout_constraintStart_toStartOf="@+id/eTPassword" />
+
+      <TextView
+          android:id="@+id/lbldob"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/date_of_birth"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+          app:layout_constraintStart_toStartOf="@+id/editTextDate" />
+
+      <EditText
+          android:id="@+id/editTextDate"
+          android:layout_width="275dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:autofillHints=""
+          android:background="@drawable/rounded_corner"
+          android:ems="10"
+          android:hint="@string/hintdob"
+          android:inputType="date"
+          android:minHeight="48dp"
+          android:textColorHint="#757575"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/eTPhone"
+          tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+      <TextView
+          android:id="@+id/lbladdress"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/address"
+          android:textColor="@color/black"
+          android:textSize="16sp"
+          app:layout_constraintBottom_toTopOf="@+id/editTextAddress"
+          app:layout_constraintStart_toStartOf="@+id/editTextAddress" />
+
+      <EditText
+          android:id="@+id/editTextAddress"
+          android:layout_width="275dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:autofillHints=""
+          android:background="@drawable/rounded_corner"
+          android:ems="10"
+          android:hint="@string/hintadd"
+          android:inputType="textPostalAddress"
+          android:minHeight="48dp"
+          android:textColorHint="#757575"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/editTextDate"
+          tools:ignore="TextContrastCheck" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:orientation="horizontal"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="1.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/eTPassword">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/loginlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginlink"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/btnSignup"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:text="@string/btnsign_up"
+          android:textColor="@color/black"
+          app:cornerRadius="10dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+          tools:ignore="DuplicateSpeakableTextCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
