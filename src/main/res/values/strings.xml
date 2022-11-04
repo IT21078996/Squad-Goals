@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">getwheels1</string>
+    <string name="getwheels">GetWheels</string>
+    <string name="welcome">Welcome, User</string>
+    <string name="registered_number">Registered Number</string>
+    <string name="welcome_user">Welcome,User</string>
+    <string name="car_name">Car Name</string>
+    <string name="car_model">Car Model</string>
+    <string name="manufacture_year">Manufacture Year</string>
+    <string name="additional_details">Additional Details</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="img1">img1</string>
+    <string name="img2">img2</string>
+    <string name="img3">img3</string>
+    <string name="home">home</string>
+    <string name="need_a_car_nrent_online_now">Need a Car? \nRent Online Now!</string>
+    <string name="submit">Submit</string>
+</resources>
