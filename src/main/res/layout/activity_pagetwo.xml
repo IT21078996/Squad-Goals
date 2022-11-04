@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F3FFCF"
-    tools:context=".MainActivity">
+    tools:context=".Pagetwo">
 
     <Button
         android:id="@+id/btnDone"
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:text="@string/givefeedback"
+        android:text="@string/feedback"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,58 +95,95 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="320dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="12dp"
+        android:layout_width="351dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="200dp"
         android:background="@drawable/white_box"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBack">
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="128dp"
+            android:text="@string/usertext1"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/txt4"
-            android:layout_width="320dp"
-            android:layout_height="220dp"
+            android:layout_width="346dp"
+            android:layout_height="166dp"
             android:autofillHints=""
             android:drawableTint="#FFFFFF"
             android:ems="10"
             android:foregroundTint="#FFFFFF"
-            android:hint="@string/enter_feedback_here"
+            android:hint=""
             android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="MissingConstraints,TextContrastCheck,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="2dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/txt5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="42dp"
-        android:text="@string/title2"
-        android:textColor="#000000"
-        android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt3" />
+    <!--  <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/constraintLayout1"
+          android:layout_width="321dp"
+          android:layout_height="120dp"
+          android:layout_marginBottom="220dp"
+          android:background="@drawable/white_box"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          tools:ignore="MissingConstraints">
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:numStars="5"
-        android:progressBackgroundTint="#E6E5E2"
-        android:progressTint="#FFC107"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+          <TextView
+              android:id="@+id/text7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="16dp"
+              android:layout_marginBottom="80dp"
+              android:text="@string/usertext2"
+              android:textColor="#070707"
+              android:textSize="16sp"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toStartOf="parent" />
+
+          <EditText
+              android:id="@+id/txt5"
+              android:layout_width="319dp"
+              android:layout_height="121dp"
+              android:autofillHints=""
+              android:drawableTint="#FFFFFF"
+              android:ems="10"
+              android:foregroundTint="#FFFFFF"
+              android:hint="@string/enter_feedback_here"
+              android:inputType="textPersonName"
+              tools:ignore="TextContrastCheck"
+              tools:layout_editor_absoluteY="1dp" />
+      </androidx.constraintlayout.widget.ConstraintLayout>  -->
+
+    <!--    <RatingBar-->
+    <!--        android:id="@+id/ratingBar"-->
+    <!--        android:layout_width="235dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginStart="90dp"-->
+    <!--        android:layout_marginTop="17dp"-->
+    <!--        android:layout_marginEnd="86dp"-->
+    <!--        android:numStars="5"-->
+    <!--        android:progressBackgroundTint="#E6E5E2"-->
+    <!--        android:progressTint="#FFC107"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/txt6" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

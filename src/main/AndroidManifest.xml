@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.getwheels01">
+    package="com.example.madproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,13 +13,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GetWheels01"
+        android:theme="@style/Theme.MADProject"
         tools:targetApi="31">
         <activity
-            android:name=".EditOption"
+            android:name=".Pagethree"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".Pagetwo"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
