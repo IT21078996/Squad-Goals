@@ -12,6 +12,6 @@ The project is built using java and firebase for the database.
 
 # Description
 The GetWheels android application allows users to easily rent cars after signing up and browsing available options.<br><br><br>
-<img src="https://github.com/IT21078996/Squad-Goals/assets/87356699/7a990c43-8d18-405f-b113-ee2ed3808557" alt="GetStarted" width="300" />
-<img src="https://github.com/IT21078996/Squad-Goals/assets/87356699/2936b3ba-3aff-4f9d-abee-ac5ef20b35dc" alt="Home" width="300" />
-<img src="https://github.com/IT21078996/Squad-Goals/assets/87356699/914311cd-687e-40e9-a4dd-99c308543e63" alt="Login" width="300" />
+<img src="https://github.com/IT21078996/Squad-Goals/assets/87356699/7a990c43-8d18-405f-b113-ee2ed3808557" alt="GetStarted" width="250" />
+<img src="https://github.com/IT21078996/Squad-Goals/assets/87356699/2936b3ba-3aff-4f9d-abee-ac5ef20b35dc" alt="Home" width="250" />
+<img src="https://github.com/IT21078996/Squad-Goals/assets/87356699/914311cd-687e-40e9-a4dd-99c308543e63" alt="Login" width="250" />
